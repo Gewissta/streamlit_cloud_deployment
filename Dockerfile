@@ -9,9 +9,9 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/Gewissta/simple_deployment.git
+RUN git clone https://github.com/Gewissta/streamlit_cloud_deployment.git
 
-WORKDIR /app/simple_deployment
+WORKDIR /app/streamlit_cloud_deployment
 
 RUN python -m pip install --upgrade pip  && \
     pip3 install -r requirements.txt
